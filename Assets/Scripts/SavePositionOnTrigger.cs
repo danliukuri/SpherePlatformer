@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SavePositionOnCollision : MonoBehaviour
+public class SavePositionOnTrigger : MonoBehaviour
 {
     [SerializeField] Transform point;
     [SerializeField] string strTag;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.collider.tag == strTag)
+        if (collision.CompareTag(strTag))
         {
             PlayerPrefs.SetFloat("xPosition", point.transform.position.x);
             PlayerPrefs.SetFloat("yPosition", point.transform.position.y);
             PlayerPrefs.SetFloat("zPosition", point.transform.position.z);
         }
-            
     }
 }

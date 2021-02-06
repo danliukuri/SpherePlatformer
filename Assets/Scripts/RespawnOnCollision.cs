@@ -13,9 +13,10 @@ public class RespawnOnCollision : MonoBehaviour
         if (collision.collider.tag == strTag)
         {
             gameObj.GetComponent<Rigidbody>().Sleep();
-            gameObj.transform.position = new Vector3(PlayerPrefs.GetFloat("xPosition", defaultPosition.x),
-                PlayerPrefs.GetFloat("yPosition", defaultPosition.y), PlayerPrefs.GetFloat("zPosition", defaultPosition.z));
+            SetPosition();
         }
-            
     }
+    private void Start() => SetPosition();
+    private void SetPosition() => gameObj.transform.position = new Vector3(PlayerPrefs.GetFloat("xPosition", defaultPosition.x),
+        PlayerPrefs.GetFloat("yPosition", defaultPosition.y), PlayerPrefs.GetFloat("zPosition", defaultPosition.z));
 }
