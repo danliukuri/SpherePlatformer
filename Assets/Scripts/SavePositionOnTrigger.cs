@@ -7,9 +7,9 @@ public class SavePositionOnTrigger : MonoBehaviour
     [SerializeField] Transform point;
     [SerializeField] string strTag;
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnTriggerEnter(Collider collider)
     {
-        if (collision.CompareTag(strTag))
+        if (collider.CompareTag(strTag))
         {
             PlayerPrefs.SetFloat("xPosition", point.transform.position.x);
             PlayerPrefs.SetFloat("yPosition", point.transform.position.y);

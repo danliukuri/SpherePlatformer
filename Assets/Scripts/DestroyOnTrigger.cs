@@ -8,9 +8,9 @@ public class DestroyOnTrigger : MonoBehaviour
     [SerializeField] string strTag;
     [SerializeField] AnimationClip animationClip;
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnTriggerEnter(Collider collider)
     {
-        if (collision.CompareTag(strTag))
+        if (collider.CompareTag(strTag))
         {
             if (animationClip)
             {
