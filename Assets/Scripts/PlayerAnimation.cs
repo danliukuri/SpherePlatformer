@@ -15,7 +15,6 @@ public class PlayerAnimation : MonoBehaviour
         if (collider.CompareTag("Portal"))
         {
             animator.SetBool("isPlayerInPortal", true);
-            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
         }
     }
     private void OnTriggerExit(Collider collider)

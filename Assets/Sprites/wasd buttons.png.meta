@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: 1dc6c13dc6f9a574db8887e6368c5d03
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1001812092938249111
+    second: wasd buttons 1_0
+  - first:
+      213: 7621191515136706276
+    second: wasd buttons 1_1
+  - first:
+      213: 7093700051148414316
+    second: wasd buttons 1_2
+  - first:
+      213: 598370250388087690
+    second: wasd buttons 1_3
+  - first:
+      213: 6988463321334728326
+    second: wasd buttons 1_1
+  - first:
+      213: 6816623241249733461
+    second: wasd buttons 1_5
+  - first:
+      213: 325074547175772131
+    second: wasd buttons 1_6
+  - first:
+      213: 3420270739882878154
+    second: wasd buttons 1_1
+  - first:
+      213: -5843450201264365499
+    second: wasd buttons 1_8
+  - first:
+      213: -3877793617797318476
+    second: wasd buttons 1_2
+  - first:
+      213: -6045067076306363318
+    second: wasd buttons 1_3
+  - first:
+      213: 7265817304155757290
+    second: wasd buttons 1_4
+  - first:
+      213: 2709489792085588676
+    second: wasd buttons 1_12
+  - first:
+      213: 2824973553362728118
+    second: wasd buttons 1_13
+  - first:
+      213: 181007618340415172
+    second: wasd buttons 1_14
+  - first:
+      213: 9053722834492884721
+    second: wasd buttons 1_15
+  - first:
+      213: 5914347501395969347
+    second: wasd buttons 1_16
+  - first:
+      213: 5404492781029733606
+    second: wasd buttons 1_17
+  - first:
+      213: -7186468817805988440
+    second: wasd buttons 1_18
+  - first:
+      213: 9214305943960400827
+    second: wasd buttons 1_19
+  - first:
+      213: 6583022728941243451
+    second: wasd buttons 1_20
+  - first:
+      213: -1167473746702658096
+    second: wasd buttons 1_21
+  - first:
+      213: -7364091276276063672
+    second: wasd buttons 1_22
+  - first:
+      213: -189870302040912959
+    second: wasd buttons 1_23
+  - first:
+      213: -5041957369504686354
+    second: wasd buttons 1_24
+  - first:
+      213: -246549266233622723
+    second: wasd buttons 1_25
+  - first:
+      213: 5890964027183813170
+    second: wasd buttons 1_26
+  - first:
+      213: 8392943879863872079
+    second: wasd buttons 1_27
+  - first:
+      213: 1073634246481365917
+    second: wasd buttons 1_28
+  - first:
+      213: -5373109323335386763
+    second: wasd buttons 1_29
+  - first:
+      213: 1684121637268702216
+    second: wasd buttons 1_30
+  - first:
+      213: 5477639069390113133
+    second: wasd buttons 1_31
+  - first:
+      213: 2748646196967748115
+    second: wasd buttons 1_32
+  - first:
+      213: -5794475452481830857
+    second: wasd buttons 1_33
+  - first:
+      213: 1465833492068982916
+    second: wasd buttons 1_34
+  - first:
+      213: 1169912340806308371
+    second: wasd buttons 1_35
+  - first:
+      213: -8376666396102336945
+    second: wasd buttons 1_36
+  - first:
+      213: -6477327234331854865
+    second: wasd buttons 1_37
+  - first:
+      213: 8972899695942209117
+    second: wasd buttons 1_38
+  - first:
+      213: -7090549954997984210
+    second: wasd buttons 1_39
+  - first:
+      213: -7448251918231317590
+    second: wasd buttons 1_40
+  - first:
+      213: -5822837142147492088
+    second: wasd buttons 1_41
+  - first:
+      213: 3399149262060508921
+    second: wasd buttons 1_42
+  - first:
+      213: -5713553081200817451
+    second: wasd buttons 1_43
+  - first:
+      213: -4687647950033882805
+    second: wasd buttons 1_44
+  - first:
+      213: -4375550286669333449
+    second: wasd buttons 1_45
+  - first:
+      213: -3042925087852972678
+    second: wasd buttons 1_46
+  - first:
+      213: 2893231229900175290
+    second: wasd buttons 1_47
+  - first:
+      213: -206770610098797127
+    second: wasd buttons 1_48
+  - first:
+      213: 4739208720347408687
+    second: wasd buttons 1_49
+  - first:
+      213: -3637297410212268554
+    second: wasd buttons 1_50
+  - first:
+      213: -5553663725862146953
+    second: wasd buttons 1_51
+  - first:
+      213: 5516935216255205333
+    second: wasd buttons 1_52
+  - first:
+      213: -1887000580049140783
+    second: wasd buttons 1_53
+  - first:
+      213: -6213052250133202744
+    second: wasd buttons 1_54
+  - first:
+      213: -2518684412117722007
+    second: wasd buttons 1_55
+  - first:
+      213: -7004890442642991036
+    second: wasd buttons 1_56
+  - first:
+      213: 4447667593890123656
+    second: wasd buttons 1_57
+  - first:
+      213: -7626460747153544994
+    second: wasd buttons 1_58
+  - first:
+      213: 8576581537420561851
+    second: wasd buttons 1_59
+  - first:
+      213: -7465048909443772822
+    second: wasd buttons 1_60
+  - first:
+      213: 8242123222315040392
+    second: wasd buttons 1_61
+  - first:
+      213: 3641219143520925016
+    second: wasd buttons 1_62
+  - first:
+      213: -7790903562531980866
+    second: wasd buttons 1_63
+  - first:
+      213: 643421565172110397
+    second: wasd buttons 1_64
+  - first:
+      213: -1300412843608993734
+    second: wasd buttons 1_65
+  - first:
+      213: -3220514595372447489
+    second: wasd buttons 1_66
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wasd buttons 1_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 286
+        width: 130
+        height: 131
+      alignment: 9
+      pivot: {x: 2, y: 5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4a166dd1e377f20800000000000000
+      internalID: 3420270739882878154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasd buttons 1_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 144
+        width: 130
+        height: 130
+      alignment: 9
+      pivot: {x: 2, y: 5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8f9e2004f4f2ac0800000000000000
+      internalID: -3877793617797318476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasd buttons 1_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 143
+        width: 129
+        height: 131
+      alignment: 9
+      pivot: {x: 2, y: 5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c9951b58b9b1ca0800000000000000
+      internalID: -6045067076306363318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasd buttons 1_4
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 144
+        width: 130
+        height: 130
+      alignment: 9
+      pivot: {x: 2, y: 5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea1719975e55d460800000000000000
+      internalID: 7265817304155757290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
