@@ -10,6 +10,8 @@ public class WASDAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (PlayerPrefs.HasKey("xPosition"))
+            gameObject.SetActive(false);
         animator = GetComponent<Animator>();
     }
 
