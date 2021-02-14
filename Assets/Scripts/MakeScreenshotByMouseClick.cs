@@ -3,10 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class MakeScreenshotByMouseClick : MonoBehaviour
 {
-	[SerializeField] Camera mainCamera;
+	Camera mainCamera;
 	int counter = 1;
-
-	private void Update()
+    private void Start()
+    {
+		mainCamera = gameObject.GetComponent<Camera>();
+    }
+    private void Update()
 	{
 		if (Input.GetMouseButtonDown(1))
 		{

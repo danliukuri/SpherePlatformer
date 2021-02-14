@@ -10,23 +10,21 @@ public class CanvasButtons : MonoBehaviour
     {
         
     }
-
     // Update is called once per frame
     void Update()
     {
         
     }
-
     public void SelectLevel()
     {
-        SceneManager.LoadScene("Level manager");
+        SceneManager.LoadScene("LevelManager");
     }
     public void LoadLevel(int number)
     {
-        SceneManager.LoadScene("Level "+ number.ToString());
+        SceneManager.LoadScene("Level"+ number.ToString());
     }
     public void LoadMenu()
     {
-        SceneManager.LoadScene("Start menu");
+        SceneManager.LoadScene("StartMenu");
     }
 }
