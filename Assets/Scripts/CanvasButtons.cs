@@ -17,6 +17,7 @@ public class CanvasButtons : MonoBehaviour
     }
     public void SelectLevel()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("LevelManager");
     }
     public void LoadLevel(int number)
@@ -25,6 +26,7 @@ public class CanvasButtons : MonoBehaviour
     }
     public void LoadMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("StartMenu");
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PortalAnimation : MonoBehaviour
 {
     [SerializeField] string strTag;
-    [SerializeField] GameObject menu;
+    [SerializeField] GameObject canvas;
     private Animator animator;
 
     // Start is called before the first frame update
@@ -22,8 +22,9 @@ public class PortalAnimation : MonoBehaviour
     {
         if (collider.CompareTag(strTag))
         {
-            menu.GetComponent<Animator>().enabled = true;
-            menu.GetComponentInParent<UnityEngine.UI.GraphicRaycaster>().enabled = true;
+            canvas.GetComponent<Animator>().enabled = true;
+            canvas.GetComponentInParent<UnityEngine.UI.GraphicRaycaster>().enabled = true;
+            canvas.GetComponent<CanvasAnimation>().IsLevelEnd = true;
             animator.SetBool("isTriggeredByPlayer", true);
         }
     }
