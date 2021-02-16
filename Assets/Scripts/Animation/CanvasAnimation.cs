@@ -16,7 +16,14 @@ public class CanvasAnimation : MonoBehaviour
 
     void Update()
     {
-        if(IsLevelEnd) animator.SetBool("isLevelEnd", true);
+        if (IsLevelEnd)
+        {
+            animator.SetLayerWeight(1, 1); // Menu Button Layer
+            animator.SetLayerWeight(2, 1); // Other levels Layer
+            animator.SetLayerWeight(4, 1); // Next level Layer
+            gameObject.GetComponentInParent<UnityEngine.UI.GraphicRaycaster>().enabled = true;
+            animator.SetBool("isLevelEnd", true);
+        } 
         
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -26,7 +33,9 @@ public class CanvasAnimation : MonoBehaviour
     }
     private void PauseOn()
     {
-        animator.enabled = true;
+        animator.SetLayerWeight(1, 1); // Menu Button Layer
+        animator.SetLayerWeight(2, 1); // Other levels Layer
+        animator.SetLayerWeight(3, 1); // Pause Layer
         animator.SetBool("isGamePause", true);
         gameObject.GetComponentInParent<UnityEngine.UI.GraphicRaycaster>().enabled = true;
         Time.timeScale = 0;
@@ -39,5 +48,10 @@ public class CanvasAnimation : MonoBehaviour
         Time.timeScale = 1;
         isGamePause = false;
     }
-    public void AnimatorDisable() => animator.enabled = false;
+    public void PauseLayersDisable()
+    {
+        animator.SetLayerWeight(1, 0); // Menu Button Layer
+        animator.SetLayerWeight(2, 0); // Other levels Layer
+        animator.SetLayerWeight(3, 0); // Pause Layer
+    }
 }

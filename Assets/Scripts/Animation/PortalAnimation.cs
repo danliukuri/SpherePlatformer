@@ -22,8 +22,6 @@ public class PortalAnimation : MonoBehaviour
     {
         if (collider.CompareTag(strTag))
         {
-            canvas.GetComponent<Animator>().enabled = true;
-            canvas.GetComponentInParent<UnityEngine.UI.GraphicRaycaster>().enabled = true;
             canvas.GetComponent<CanvasAnimation>().IsLevelEnd = true;
             animator.SetBool("isTriggeredByPlayer", true);
         }
