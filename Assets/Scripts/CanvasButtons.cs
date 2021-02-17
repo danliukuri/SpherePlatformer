@@ -1,21 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class CanvasButtons : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void SelectLevel()
+    public void LoadLevelSelector()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("LevelManager");
@@ -24,9 +13,19 @@ public class CanvasButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Level"+ number.ToString());
     }
-    public void LoadMenu()
+    public void LoadStartMenu()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene("StartMenu");
+    }
+    public void QuitTheGame()
+    {
+#if (UNITY_EDITOR)
+        UnityEditor.EditorApplication.isPlaying = false;
+#elif (UNITY_STANDALONE) 
+        Application.Quit();
+#elif (UNITY_WEBGL)
+        Application.OpenURL("https://yuriy-danyliuk.itch.io/");
+#endif
     }
 }

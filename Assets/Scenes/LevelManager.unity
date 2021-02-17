@@ -349,7 +349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.446472, y: -149.54419}
+  m_AnchoredPosition: {x: 15.446472, y: -149.5442}
   m_SizeDelta: {x: 93.672485, y: -108.46716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &268302698
@@ -1617,7 +1617,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.446472, y: -149.54419}
+  m_AnchoredPosition: {x: 15.446472, y: -149.5442}
   m_SizeDelta: {x: 93.672485, y: -108.46716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834626480
@@ -1751,7 +1751,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 14.499817, y: 317.60065}
+  m_AnchoredPosition: {x: 14.499756, y: 317.60065}
   m_SizeDelta: {x: -777.13635, y: -404.42743}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &888042452
@@ -2404,7 +2404,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1418040952}
         m_TargetAssemblyTypeName: CanvasButtons, Assembly-CSharp
-        m_MethodName: LoadMenu
+        m_MethodName: LoadStartMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2660,7 +2660,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 15.446472, y: -149.54419}
+  m_AnchoredPosition: {x: 15.446472, y: -149.54417}
   m_SizeDelta: {x: 93.672485, y: -108.46716}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1509387167
