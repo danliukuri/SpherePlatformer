@@ -19,7 +19,11 @@ public class WASDAnimation : MonoBehaviour
     {
         if(!isPlayerMoved)
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            {
                 animator.SetBool("isPlayerMoved", true);
+                isPlayerMoved = true;
+            }
+                
     }
     public void Disable() => gameObject.SetActive(false);
 }

@@ -22,6 +22,7 @@ public class PortalAnimation : MonoBehaviour
     {
         if (collider.CompareTag(strTag))
         {
+            canvas.GetComponent<Timer>().IsLevelEnd = true;
             canvas.GetComponent<CanvasAnimation>().IsLevelEnd = true;
             animator.SetBool("isTriggeredByPlayer", true);
         }
