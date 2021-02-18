@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 5c80c75c64403924aa1c0892eb7a358d, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: a7fe4a6536c13cc4fb762f08c1a6fd28, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 1ccdd42ea7c16eb42b43a35e41cd8c02, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -3285,7 +3285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &366444185
 Transform:
   m_ObjectHideFlags: 0
@@ -3299,7 +3299,7 @@ Transform:
   m_Children:
   - {fileID: 921804632}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &378977705
 GameObject:
@@ -7176,7 +7176,7 @@ RectTransform:
   - {fileID: 212221194}
   - {fileID: 2055431700}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7593,7 +7593,7 @@ Transform:
   m_Children:
   - {fileID: 963194228}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &863711896
 MonoBehaviour:
@@ -8232,6 +8232,10 @@ PrefabInstance:
       propertyPath: point
       value: 
       objectReference: {fileID: 366444185}
+    - target: {fileID: 8535638914755480740, guid: cc96043db5e9d3d409c9de8dc3ecc999, type: 3}
+      propertyPath: keyPointsActivityController
+      value: 
+      objectReference: {fileID: 2038844267}
     - target: {fileID: 8535638914755480749, guid: cc96043db5e9d3d409c9de8dc3ecc999, type: 3}
       propertyPath: m_Name
       value: Checkpoint
@@ -8557,7 +8561,7 @@ Transform:
   - {fileID: 1327592501}
   - {fileID: 1393156565}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &929389894
 GameObject:
@@ -12653,6 +12657,11 @@ Transform:
   m_Father: {fileID: 926798044}
   m_RootOrder: 145
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1333165811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3502538295000447166, guid: 0cf99ee8f2ac30141819c9177a68b253, type: 3}
+  m_PrefabInstance: {fileID: 3502538294412235760}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1354814971
 GameObject:
   m_ObjectHideFlags: 0
@@ -14814,7 +14823,7 @@ Transform:
   m_Children:
   - {fileID: 878863445}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1550742549
 GameObject:
@@ -16015,7 +16024,7 @@ Transform:
   m_Children:
   - {fileID: 895166562}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1677388538
 GameObject:
@@ -19401,6 +19410,53 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038623838}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2038844267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2038844269}
+  - component: {fileID: 2038844268}
+  m_Layer: 0
+  m_Name: KeyPointsActivityController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2038844268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038844267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d439702e0b885d547a65cac3d24473ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyPoints:
+  - {fileID: 1675459336}
+  - {fileID: 366444184}
+  - {fileID: 1333165811}
+--- !u!4 &2038844269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2038844267}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4949485, y: 1.5832652, z: -1.9807785}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2050169195
 GameObject:
   m_ObjectHideFlags: 0
@@ -20213,7 +20269,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2107733359
 GameObject:
@@ -20435,6 +20491,10 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 2055431699}
+    - target: {fileID: 3502538295000447138, guid: 0cf99ee8f2ac30141819c9177a68b253, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3502538295000447140, guid: 0cf99ee8f2ac30141819c9177a68b253, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.469999
@@ -20465,7 +20525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3502538295000447140, guid: 0cf99ee8f2ac30141819c9177a68b253, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3502538295000447140, guid: 0cf99ee8f2ac30141819c9177a68b253, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -20482,6 +20542,10 @@ PrefabInstance:
     - target: {fileID: 3502538295000447166, guid: 0cf99ee8f2ac30141819c9177a68b253, type: 3}
       propertyPath: m_Name
       value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502538295000447166, guid: 0cf99ee8f2ac30141819c9177a68b253, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cf99ee8f2ac30141819c9177a68b253, type: 3}
@@ -20526,7 +20590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3653760495812661086, guid: e7f149f62a731c541bda702920cedb20, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3653760495812661086, guid: e7f149f62a731c541bda702920cedb20, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -20553,6 +20617,10 @@ PrefabInstance:
       propertyPath: point
       value: 
       objectReference: {fileID: 1675459337}
+    - target: {fileID: 8535638914755480740, guid: cc96043db5e9d3d409c9de8dc3ecc999, type: 3}
+      propertyPath: keyPointsActivityController
+      value: 
+      objectReference: {fileID: 2038844267}
     - target: {fileID: 8535638914755480749, guid: cc96043db5e9d3d409c9de8dc3ecc999, type: 3}
       propertyPath: m_Name
       value: Checkpoint
