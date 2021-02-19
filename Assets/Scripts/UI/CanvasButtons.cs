@@ -11,6 +11,7 @@ public class CanvasButtons : MonoBehaviour
     }
     public void LoadLevel(int number)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Level"+ number.ToString());
     }
     public void LoadStartMenu()
@@ -34,6 +35,7 @@ public class CanvasButtons : MonoBehaviour
             PlayerPrefs.DeleteKey("KeyPointPosition");
         if (PlayerPrefs.HasKey("StartTime"))
             PlayerPrefs.DeleteKey("StartTime");
+        Time.timeScale = 1;
         SceneManager.LoadScene("Level" + number.ToString());
     }
 }

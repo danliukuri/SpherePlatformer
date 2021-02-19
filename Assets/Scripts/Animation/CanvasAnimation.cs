@@ -6,7 +6,7 @@ public class CanvasAnimation : MonoBehaviour
 {
     public bool IsLevelEnd { get; set; }
     private Animator animator;
-    private  bool isGamePause;
+    private bool isGamePause;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +22,7 @@ public class CanvasAnimation : MonoBehaviour
             animator.SetLayerWeight(2, 1); // Other levels Layer
             animator.SetLayerWeight(3, 1); // Retry button Layer
             animator.SetLayerWeight(4, 1); // Next level Layer
-            gameObject.GetComponentInParent<UnityEngine.UI.GraphicRaycaster>().enabled = true;
+            GetComponentInParent<UnityEngine.UI.GraphicRaycaster>().enabled = true;
             animator.SetBool("isLevelEnd", true);
         } 
         
@@ -56,5 +56,16 @@ public class CanvasAnimation : MonoBehaviour
         animator.SetLayerWeight(2, 0); // Other levels Layer
         animator.SetLayerWeight(3, 0); // Retry button Layer
         animator.SetLayerWeight(5, 1); // Pause Layer
+    }
+
+    public void PositionSave()
+    {
+        animator.SetLayerWeight(6, 1); // Position save Layer
+        animator.SetBool("isPositionSave", true);
+    }
+    public void PositionSaved()
+    {
+        animator.SetLayerWeight(6, 0); // Position save Layer
+        animator.SetBool("isPositionSave", false);
     }
 }
