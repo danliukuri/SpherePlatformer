@@ -21,6 +21,8 @@ public class PortalAnimation : MonoBehaviour
             canvas.GetComponent<Timer>().IsLevelEnd = true;
             canvas.GetComponent<CanvasAnimation>().IsLevelEnd = true;
             animator.SetBool("isTriggeredByPlayer", true);
+            if (PlayerPrefs.HasKey("KeyPointPosition"))
+                PlayerPrefs.DeleteKey("KeyPointPosition");
         }
     }
 }

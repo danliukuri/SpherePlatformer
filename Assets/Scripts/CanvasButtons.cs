@@ -28,4 +28,12 @@ public class CanvasButtons : MonoBehaviour
         Application.OpenURL("https://yuriy-danyliuk.itch.io/");
 #endif
     }
+    public void RestartLevel(int number)
+    {
+        if (PlayerPrefs.HasKey("KeyPointPosition"))
+            PlayerPrefs.DeleteKey("KeyPointPosition");
+        if (PlayerPrefs.HasKey("StartTime"))
+            PlayerPrefs.DeleteKey("StartTime");
+        SceneManager.LoadScene("Level" + number.ToString());
+    }
 }

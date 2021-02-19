@@ -15,12 +15,13 @@ public class Timer : MonoBehaviour
         if (!isPlayerMoved)
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
             {
-                startTime = Time.time;
+                startTime = PlayerPrefs.GetFloat("StartTime", Time.time);
                 isPlayerMoved = true;
             }
         if(IsLevelEnd)
         {
             timerText.text = System.TimeSpan.FromSeconds(Time.time - startTime).ToString("mm':'ss':'ff");
+            PlayerPrefs.DeleteKey("StartTime");
             IsLevelEnd = false;
         }
     }
