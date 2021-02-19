@@ -33,11 +33,5 @@ public class PlayerAnimation : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
     void EventFinished(string parameterName) => animator.SetBool(parameterName, false);
 }

@@ -10,7 +10,7 @@ public class WASDAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey("xPosition"))
+        if (PlayerPrefs.HasKey("KeyPointPosition"))
             gameObject.SetActive(false);
         animator = GetComponent<Animator>();
     }
@@ -22,8 +22,7 @@ public class WASDAnimation : MonoBehaviour
             {
                 animator.SetBool("isPlayerMoved", true);
                 isPlayerMoved = true;
-            }
-                
+            }    
     }
     public void Disable() => gameObject.SetActive(false);
 }

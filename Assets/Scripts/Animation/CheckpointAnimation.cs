@@ -10,18 +10,18 @@ public class CheckpointAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetFloat("xPosition") == transform.position.x &&
-            PlayerPrefs.GetFloat("yPosition") == transform.position.y &&
-            PlayerPrefs.GetFloat("zPosition") == transform.position.z)
-            gameObject.SetActive(false);
+        if(PlayerPrefs.HasKey("KeyPointPosition"))
+        {
+            Position keyPointPosition = JsonUtility.FromJson<Position>(PlayerPrefs.GetString("KeyPointPosition"));
+            if (keyPointPosition.X == transform.position.x && keyPointPosition.Y == transform.position.y && keyPointPosition.Z == transform.position.z)
+                gameObject.SetActive(false);
+        }  
         animator = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.CompareTag(strTag))
-        {
             animator.SetBool("isTriggeredByPlayer", true);
-        }
     }
 }

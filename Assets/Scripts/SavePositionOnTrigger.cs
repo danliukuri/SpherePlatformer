@@ -12,9 +12,7 @@ public class SavePositionOnTrigger : MonoBehaviour
     {
         if (collider.CompareTag(strTag))
         {
-            PlayerPrefs.SetFloat("xPosition", point.transform.position.x);
-            PlayerPrefs.SetFloat("yPosition", point.transform.position.y);
-            PlayerPrefs.SetFloat("zPosition", point.transform.position.z);
+            PlayerPrefs.SetString("KeyPointPosition", JsonUtility.ToJson(new Position(point.position.x, point.position.y, point.position.z)));
             keyPointsActivityController.GetComponent<KeyPointsActivityController>().SetActiveNextKeyPoint(transform);
         }
     }
