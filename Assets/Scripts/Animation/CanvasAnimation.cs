@@ -1,17 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CanvasAnimation : MonoBehaviour
 {
     public bool IsLevelEnd { get; set; }
     private Animator animator;
     private bool isGamePause;
+    private GraphicRaycaster canvasGraphicRaycaster;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+        canvasGraphicRaycaster = GetComponentInParent<GraphicRaycaster>();
     }
 
     void Update()
@@ -22,7 +25,7 @@ public class CanvasAnimation : MonoBehaviour
             animator.SetLayerWeight(2, 1); // Other levels Layer
             animator.SetLayerWeight(3, 1); // Retry button Layer
             animator.SetLayerWeight(4, 1); // Next level Layer
-            GetComponentInParent<UnityEngine.UI.GraphicRaycaster>().enabled = true;
+            canvasGraphicRaycaster.enabled = true;
             animator.SetBool("isLevelEnd", true);
         } 
         
@@ -39,14 +42,14 @@ public class CanvasAnimation : MonoBehaviour
         animator.SetLayerWeight(3, 1); // Retry button Layer
         animator.SetLayerWeight(5, 1); // Pause Layer
         animator.SetBool("isGamePause", true);
-        gameObject.GetComponentInParent<UnityEngine.UI.GraphicRaycaster>().enabled = true;
+        canvasGraphicRaycaster.enabled = true;
         Time.timeScale = 0;
         isGamePause = true;
     }
     private void PauseOff()
     {
         animator.SetBool("isGamePause", false);
-        gameObject.GetComponentInParent<UnityEngine.UI.GraphicRaycaster>().enabled = false;
+        canvasGraphicRaycaster.enabled = false;
         Time.timeScale = 1;
         isGamePause = false;
     }

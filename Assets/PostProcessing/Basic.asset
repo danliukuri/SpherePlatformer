@@ -30,7 +30,7 @@ MonoBehaviour:
     m_Settings:
       excludeSkybox: 1
   antialiasing:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       method: 0
       fxaaSettings:
@@ -56,7 +56,7 @@ MonoBehaviour:
       reflection:
         blendType: 0
         reflectionQuality: 2
-        maxDistance: 100
+        maxDistance: 16
         iterationCount: 256
         stepSize: 3
         widthModifier: 0.5
@@ -72,17 +72,17 @@ MonoBehaviour:
   depthOfField:
     m_Enabled: 0
     m_Settings:
-      focusDistance: 3.86
-      aperture: 2.4
-      focalLength: 61
-      useCameraFov: 0
+      focusDistance: 0.9
+      aperture: 4
+      focalLength: 38
+      useCameraFov: 1
       kernelSize: 1
   motionBlur:
     m_Enabled: 0
     m_Settings:
-      shutterAngle: 270
-      sampleCount: 10
-      frameBlending: 0
+      shutterAngle: 109
+      sampleCount: 12
+      frameBlending: 0.23
   eyeAdaptation:
     m_Enabled: 0
     m_Settings:
@@ -101,9 +101,9 @@ MonoBehaviour:
     m_Enabled: 0
     m_Settings:
       bloom:
-        intensity: 0.91
+        intensity: 0.33
         threshold: 1
-        softKnee: 0.582
+        softKnee: 0.88
         radius: 3.24
         antiFlicker: 0
       lensDirt:
@@ -332,9 +332,9 @@ MonoBehaviour:
     m_Enabled: 0
     m_Settings:
       colored: 1
-      intensity: 0.5
-      size: 1
-      luminanceContribution: 0.8
+      intensity: 1
+      size: 0.3
+      luminanceContribution: 1
   vignette:
     m_Enabled: 1
     m_Settings:

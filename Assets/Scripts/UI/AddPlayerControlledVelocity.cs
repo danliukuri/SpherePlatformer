@@ -11,13 +11,17 @@ public class AddPlayerControlledVelocity : MonoBehaviour
     KeyCode keyPositive;
     [SerializeField]
     KeyCode keyNegative;
-
+    private Rigidbody rigidbody; 
+    private void Start()
+    {
+        rigidbody = GetComponent<Rigidbody>();
+    }
     void FixedUpdate ()
     {
         if (Input.GetKey(keyPositive))
-            GetComponent<Rigidbody>().velocity += v3Force;
+            rigidbody.velocity += v3Force;
 
         if (Input.GetKey(keyNegative))
-            GetComponent<Rigidbody>().velocity -= v3Force;
+            rigidbody.velocity -= v3Force;
     }
 }

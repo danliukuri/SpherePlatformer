@@ -7,6 +7,7 @@ public class RespawnOnCollision : MonoBehaviour
     [SerializeField] Transform gameObj;
     [SerializeField] Vector3 defaultPosition;
     [SerializeField] string strTag;
+    Rigidbody gameObjRigidbody;
     Position keyPointPosition;
     Vector3 position;
 
@@ -14,7 +15,7 @@ public class RespawnOnCollision : MonoBehaviour
     {
         if (collision.collider.tag == strTag)
         {
-            gameObj.GetComponent<Rigidbody>().Sleep();
+            gameObjRigidbody.Sleep();
             SetKeyPointPositionFromJson();
         }
     }
@@ -25,6 +26,7 @@ public class RespawnOnCollision : MonoBehaviour
             SetKeyPointPositionFromJson();
         else
             SetPosition(defaultPosition);
+        gameObjRigidbody = gameObj.GetComponent<Rigidbody>();
     }
     private void SetPosition(Vector3 position) => gameObj.position = position;
     private void SetKeyPointPositionFromJson()
